@@ -1,1 +1,23 @@
+// ======== Normalize ==========
+@import './normalize';
+
+// ========== UTILS ============
 @import './utils/variables';
+
+// ======== BASE =================
+
+@import './base/reset';
+@import './base/body';
+@import './base/base';
+@import './base/container';
+
+// ======== LAYOUT ===============
+
+@import './layout/hero_header';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer_reviews';
+@import './layout/contacts';
+@import './layout/footer';
