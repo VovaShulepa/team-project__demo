@@ -3,29 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>ICE CREAM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/favicon/favicon.png"
+      width="5"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <header>
+      <include src="./partials/hero_header.html"></include>
+    </header>
+    <main>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer_reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
+    <footer>
+      <include src="./partials/footer.html"></include>
+    </footer>
 
-    <include src="./partials/header.html"></include>
-
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/features.html"></include>
-    <include src="./partials/contacts.html"></include>
-    <include src="./partials/modal.html"></include>
-
-    <include src="./partials/footer.html"></include>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
