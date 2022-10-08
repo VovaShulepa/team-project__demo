@@ -64,6 +64,13 @@
     }
 }
 
+.about__flex {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+}
+
 .about__circle {
     position: relative;
 
@@ -77,13 +84,15 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: 335px;
+        width: 336px;
         height: 330px;
+        margin-right: 32px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 490px;
         height: 490px;
+        margin-right: 100px;
     }
 }
 
@@ -97,7 +106,7 @@
 
     @media screen and (min-width: 768px) {
         transform: translateY(26px);
-        width: 335px;
+        width: 336px;
         height: 330px;
     }
 
@@ -108,7 +117,14 @@
     }
 }
 
+.about__flex-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .about__text {
+    display: block;
     margin-bottom: 20px;
 
     font-family: $primary-font;
@@ -121,11 +137,40 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 48px;
         text-align: start;
+        width: 336px;
+        line-height: 1.93;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 463px;
+        font-size: 14px;
+        line-height: 1.76;
     }
 }
 
-// .about__paragraf {
-// }
+.about__paragraf {
+    margin-bottom: 4px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+    }
+
+}
+
+.about__paragraf--big {
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.94;
+    }
+}
+
+.about__extra-paragraf {
+    line-height: 1.94;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
 
 .about__button {
     display: flex;
@@ -146,7 +191,7 @@
 
     @media screen and (max-width: 767px) {
         margin: 0 auto;
-     }
+    }
 }
 
 .about__button-arrow {
@@ -160,5 +205,4 @@
     line-height: 1.29;
 
     color: $black-text-color;
-
 }
