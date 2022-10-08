@@ -1,4 +1,9 @@
-.gallery_background {
+.section-gallery {
+  background-color: $secondary-background-color;
+  color: aqua;
+}
+
+.gallery__background {
   width: 100%;
   min-height: 25px;
   background-color: $main-background-color;
@@ -6,4 +11,12 @@
   @media screen and (min-width: 768px) {
     height: 165px;
   }
+  @media screen and (min-width: 1200px) {
+    height: 95px;
+  }
+}
+
+.gallery__photos {
+  margin-left: auto;
+  margin-right: auto;
 }
