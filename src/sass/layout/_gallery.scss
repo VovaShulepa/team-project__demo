@@ -1,3 +1,9 @@
 .gallery_background {
-  background-image: url(../../images/gallery/gallery-background.png);
+  width: 100%;
+  min-height: 25px;
+  background-color: $main-background-color;
+
+  @media screen and (min-width: 768px) {
+    height: 165px;
+  }
 }
