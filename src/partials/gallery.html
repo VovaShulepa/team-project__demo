@@ -1,35 +1,29 @@
 <section class="section-gallery">
   <div class="gallery__background container">
-    <h1 class="visually-hidden">Gallery Ice Creams</h1>
-    <div class="gallery__photos">
-      <picture>
-        <source
-          srcset="
-            ./images/gallery/desktop/ice-creams-1013.png    1x,
-            ./images/gallery/desktop/ice-creams-1013@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/gallery/tablet/ice-creams-704.png    1x,
-            ./images/gallery/tablet/ice-creams-704@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/gallery/mobile/ice-creams-279.png 1x,
-            ./images/gallery/mobile/ice-creams-279.png 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <img
-          src="./images/gallery/mobile/ice-creams-279.png"
-          alt="ice-creams"
-          class="gallery__photos-ice-creams"
-        />
-      </picture>
-    </div>
+    <picture class="gallery__photos">
+      <source
+        srcset="
+          ./images/gallery/desktop/ice-creams-1013.png    1x,
+          ./images/gallery/desktop/ice-creams-1013@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/gallery/tablet/ice-creams-704.png    1x,
+          ./images/gallery/tablet/ice-creams-704@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/gallery/mobile/ice-creams-279@2x.png 2x"
+        media="(max-width: 767px)"
+      />
+      <img
+        src="./images/gallery/mobile/ice-creams-279.png"
+        alt="ice-creams"
+        class="gallery__photos-ice-creams"
+      />
+    </picture>
   </div>
 </section>
