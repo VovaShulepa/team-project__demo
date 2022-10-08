@@ -1,11 +1,10 @@
 .section-gallery {
   background-color: $secondary-background-color;
-  color: aqua;
 }
 
 .gallery__background {
   width: 100%;
-  min-height: 25px;
+  height: 25px;
   background-color: $main-background-color;
 
   @media screen and (min-width: 768px) {
@@ -16,7 +15,14 @@
   }
 }
 
-.gallery__photos {
+.gallery__photos-ice-creams {
+  width: 100%;
+  border-radius: 7px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1013px;
+    border-radius: 7px;
+  }
 }
