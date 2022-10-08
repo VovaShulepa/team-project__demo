@@ -1,3 +1,32 @@
 <section class="section-gallery">
-  <div class="gallery_background container"></div>
+  <div class="gallery__background container">
+    <h1 class="visually-hidden">Gallery Ice Creams</h1>
+    <div class="gallery__photos">
+      <picture>
+        <source
+          srcset="
+            ../images/gallery/desktop/ice-creams-1113.jpg    1x,
+            ../images/gallery/desktop/ice-creams-1113@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ../images/gallery/tablet/ice-creams-704.jpg    1x,
+            ../images/gallery/tablet/ice-creams-704@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="../images/gallery/mobile/ice-creams-279@2x.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          src="../images/gallery/mobile/ice-creams-279.jpg"
+          alt="ice-creams"
+          class="gallery__ice-creams"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
