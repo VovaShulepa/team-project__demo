@@ -188,11 +188,11 @@
     border-radius: 10px;
 
     &:hover {
-        background-color: $green-color;
+        background-color: $accent-color;
     }
 
     &:focus {
-        background-color: $green-color;
+        background-color: $accent-color;
         color: $white-text-color;
         border: transparent;
         outline: 0;
