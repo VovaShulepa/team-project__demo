@@ -36,10 +36,20 @@
 // ===============  SWIPER  =========================
 
 .customers__photo {
-  padding-top: 400px;
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 186px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+    margin-top: 223px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+    margin-top: 456px;
+  }
 }
 
 .customers__text-box {
