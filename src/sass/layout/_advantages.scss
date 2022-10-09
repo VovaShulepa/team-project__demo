@@ -14,6 +14,7 @@
 
 .advantages__list {
     list-style: none;
+ 
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -34,7 +35,8 @@
     position: relative;
     text-align: center;
     align-items: center;
-
+    display: flex;
+    flex-direction: column;
     @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 95px;
@@ -62,7 +64,6 @@
         display: block;
         content: "";
         position: absolute;
-        left: 40%;
         top: -66px;
 
         width: 50px;
@@ -82,7 +83,6 @@
         display: block;
         content: "";
         position: absolute;
-        left: 40%;
         top: -66px;
 
         width: 50px;
@@ -99,11 +99,8 @@
 
 .advantages__item-3 {
     &::before {
-        display: block;
-
         content: "";
         position: absolute;
-        left: 40%;
         top: -66px;
 
         width: 50px;
