@@ -1,7 +1,14 @@
 .section-advantages {
     background-color: $main-background-color;
     padding-top: 60px;
-    padding-bottom: 86px;
+    padding-bottom: 36px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 86px;
+    }
 }
 
 .advantages__list {
