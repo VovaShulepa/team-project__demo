@@ -1,18 +1,18 @@
 // ======== Normalize ==========
 @import './normalize';
+// ======= Reset ===========
+@import './base/reset';
 
 // ========== UTILS ============
 @import './utils/variables';
+@import './utils/visually-hidden';
 
 // ======== BASE =================
-
-@import './base/reset';
 @import './base/body';
 @import './base/base';
 @import './base/container';
 
 // ======== LAYOUT ===============
-
 @import './layout/hero_header';
 @import './layout/products';
 @import './layout/about';

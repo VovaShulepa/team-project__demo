@@ -1,0 +1,29 @@
+<section class="section-gallery">
+  <div class="gallery__background container">
+    <picture class="gallery__photos">
+      <source
+        srcset="
+          ./images/gallery/desktop/ice-creams-1013.png    1x,
+          ./images/gallery/desktop/ice-creams-1013@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/gallery/tablet/ice-creams-704.png    1x,
+          ./images/gallery/tablet/ice-creams-704@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/gallery/mobile/ice-creams-279@2x.png 2x"
+        media="(max-width: 767px)"
+      />
+      <img
+        src="./images/gallery/mobile/ice-creams-279.png"
+        alt="ice-creams"
+        class="gallery__photos-ice-creams"
+      />
+    </picture>
+  </div>
+</section>
