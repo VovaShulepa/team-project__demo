@@ -187,6 +187,23 @@
     background-color: $yellow-color;
     border-radius: 10px;
 
+    &:hover {
+        background-color: $green-color;
+    }
+
+    &:focus {
+        background-color: $green-color;
+        color: $white-text-color;
+        border: transparent;
+        outline: 0;
+    }
+
+    &:focus {
+        .about__button-arrow {
+            color: $white-text-color;
+        }
+    }
+
     @media screen and (max-width: 767px) {
         margin: 0 auto;
     }
@@ -203,4 +220,8 @@
     line-height: 1.29;
 
     color: $black-text-color;
+
+    &:focus {
+        color: $white-text-color;
+    }
 }
