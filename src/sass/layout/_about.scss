@@ -1,3 +1,4 @@
+
 .section-about {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -46,7 +47,7 @@
     margin-right: auto;
     margin-bottom: 32px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.8px) {
         max-width: 200px;
     }
 
@@ -77,12 +78,12 @@
     margin-left: auto;
     margin-right: auto;
 
-    // @media screen and (max-width: 319px) {
-    //     max-width: 278px;
-    //     max-height: 278px;
-    // }
+    @media screen and (max-width: 479px) {
+        max-width: 278px;
+        max-height: 278px;
+    }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.8px) {
         margin-bottom: 61px;
     }
 
@@ -173,7 +174,7 @@
 .about__extra-paragraf {
     line-height: 1.94;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.8px) {
         display: none;
     }
 }
@@ -212,7 +213,7 @@
         }
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.8px) {
         margin: 0 auto;
     }
 }
