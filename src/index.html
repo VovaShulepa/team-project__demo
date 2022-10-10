@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ===========TITLE============== -->
-    <title>ICE CREAM</title>
 
-    <!-- =============FONTS=================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ===========TITLE============== -->
+  <title>ICE CREAM</title>
 
-    <!-- ==============FAVICON=================== -->
-    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.png" />
+  <!-- =============FONTS=================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- ===============STYLES================ -->
-    <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- ==============FAVICON=================== -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.png" />
 
-    <!-- ============= SWIPER CSS ================= -->
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css " />
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+  <!-- ===============STYLES================ -->
+  <link rel="stylesheet" href="./sass/index.scss" />
 
-    <include src="./partials/hero_header.html"></include>
+  <!-- ============= SWIPER CSS ================= -->
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css " />
+</head>
 
-    <main>
-      <include src="./partials/products.html"></include>
-      <include src="./partials/about.html"></include>
-        <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/customer_reviews.html"></include>
-      <include src="./partials/contacts.html"></include>
-    </main>
-    <include src="./partials/footer.html"></include>
-    <!-- modal_about -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-          <h2 class="modal__title">How it’s made?</h2>
-          <video class="about__video" src="./video/Very Funny Video-Cow's Milk Competition.mp4"
-          poster="./images/about/cow_s_.jpg"
-  controls
-  autoplay
-  loop
-  preload="auto">
+<body>
+  <!-- ❗️❗️❗️ Add partials like so for every page -->
 
-          </video>
-          <p class="modal__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          </p>
-          <button class="about__btn" data-modal-close><svg class="modal-icon" width="16" height="16">
-            <use href="./images/about/icon.svg#icon-modal-close"></use>
-          </svg></button>
-        </div>
+  <include src="./partials/hero_header.html"></include>
+
+  <main>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer_reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+  </main>
+  <include src="./partials/footer.html"></include>
+  <!-- modal_about -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <h2 class="modal__title">How it’s made?</h2>
+      <video class="about__video" src="./video/Very Funny Video-Cow's Milk Competition.mp4"
+        poster="./images/about/cow_s_.jpg" controls autoplay loop preload="auto">
+
+      </video>
+      <p class="modal__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      </p>
+      <button class="about__btn" data-modal-close><svg class="modal-icon" width="16" height="16">
+          <use href="./images/about/icon.svg#icon-modal-close"></use>
+        </svg></button>
     </div>
+  </div>
 
-    <!-- ==================JAVA SCRIPT ==================== -->
-        <script type="module" src="./index.js"></script>
-         <!-- ================  about_modal ========================= -->
-        <script src="./modal/modal.js"></script>
-    <!-- ================  SWIPER  JS ========================= -->
-    <script src="swiper/swiper-bundle.min.js"></script>
-    <script src="swiper/swiper-settings.js"></script>
-  </body>
+  <!-- ==================JAVA SCRIPT ==================== -->
+  <script type="module" src="./index.js"></script>
+  <!-- ================  about_modal ========================= -->
+  <script src="./modal/modal.js"></script>
+  <!-- ================  SWIPER  JS ========================= -->
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <script src="swiper/swiper-settings.js"></script>
+</body>
+
 </html>
