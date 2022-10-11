@@ -11,12 +11,12 @@
             and natural stabilizer
           </p>
         </div>
-        <button type="button" class="products__button">
-          <svg class="products__button--arrow" width="40" height="15">
+        <button type="button" class="products__button" data-products-modal-open>
+          <!-- <svg class="products__button--arrow" width="40" height="15">
             <use
               href="./images/products/products-icon.svg#icon-products-arrow"
             ></use>
-          </svg>
+          </svg> -->
         </button>
       </li>
       <li class="products__card products__card--coffee">
@@ -27,12 +27,12 @@
             without the use of preservatives and flavor enhancers
           </p>
         </div>
-        <button type="button" class="products__button">
-          <svg class="products__button--arrow" width="40" height="15">
+        <button type="button" class="products__button" data-products-modal-open>
+          <!-- <svg class="products__button--arrow" width="40" height="15">
             <use
               href="./images/products/products-icon.svg#icon-products-arrow"
             ></use>
-          </svg>
+          </svg> -->
         </button>
       </li>
       <li class="products__card products__card--milkshake">
@@ -43,14 +43,26 @@
             fruits, berries and other sweets of your choice
           </p>
         </div>
-        <button type="button" class="products__button">
-          <svg class="products__button--arrow" width="40" height="15">
+        <button type="button" class="products__button" data-products-modal-open>
+          <!-- <svg class="products__button--arrow" width="40" height="15">
             <use
               href="./images/products/products-icon.svg#icon-products-arrow"
             ></use>
-          </svg>
+          </svg> -->
         </button>
       </li>
     </ul>
+  </div>
+  <div class="products-backdrop is-hidden" data-products-modal>
+    <div class="products-modal">
+      <button
+        type="button"
+        class="products-modal__button--close"
+        data-products-modal-close
+      >
+        HELLO
+      </button>
+      <h1>HELLO WORLD</h1>
+    </div>
   </div>
 </section>
