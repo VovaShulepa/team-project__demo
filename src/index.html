@@ -26,8 +26,8 @@
     <!-- ============= SWIPER CSS ================= -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
-  <!-- ===============STYLES================ -->
-  <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- ===============STYLES================ -->
+    <link rel="stylesheet" href="./sass/index.scss" />
 
     <!-- ==================JAVA SCRIPT ==================== -->
     <script type="module" src="./index.js"></script>
@@ -54,30 +54,38 @@
     </main>
 
     <include src="./partials/footer.html"></include>
-    
-     <!-- modal_about -->
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <h2 class="modal__title">How it’s made?</h2>
-      <video class="about__video" src="./video/Very Funny Video-Cow's Milk Competition.mp4"
-        poster="./images/about/cow_s_.jpg" controls autoplay loop preload="auto">
 
-      </video>
-      <p class="modal__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      </p>
-      <button class="about__btn" data-modal-close><svg class="modal-icon" width="16" height="16">
-          <use href="./images/about/icon.svg#icon-modal-close"></use>
-        </svg></button>
+    <!-- modal_about -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h2 class="modal__title">How it’s made?</h2>
+        <video
+          class="about__video"
+          src="./video/Very Funny Video-Cow's Milk Competition.mp4"
+          poster="./images/about/cow_s_.jpg"
+          controls
+          autoplay
+          loop
+          preload="auto"
+        ></video>
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et
+        </p>
+        <button class="about__btn" data-modal-close>
+          <svg class="modal-icon" width="16" height="16">
+            <use href="./images/about/icon.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
 
     <!-- ================  SWIPER  JS ========================= -->
     <script src="./js/swiper-bundle.min.js"></script>
-    
-     <!-- ================  ABOUT_MODAL ========================= -->
-  <script src="./js/about_modal.js"></script>
-  
+
+    <!-- ================  ABOUT_MODAL ========================= -->
+    <script src="./js/about_modal.js"></script>
   </body>
 </html>
