@@ -1,40 +1,39 @@
 // =============
 
-// body {
-//   background-size: cover;
+.gallery-reviews__overlay {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 
-//   background-position: center;
-//   width: 100%;
-//   height: 100%;
+  background-image: url('../images/customer_reviews/tablet/ice-cream_background.png');
 
-//   background-image: url('../images/customer_reviews/tablet/ice-cream_background.png');
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/customer_reviews/mobile/ice-cream_background@2x.png');
+  }
 
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url('../images/customer_reviews/mobile/ice-cream_background@2x.png');
-//   }
+  @media screen and (min-width: 480px) {
+    background-image: url('../images/customer_reviews/tablet/ice-cream_background.png');
 
-//   @media screen and (min-width: 480px) {
-//     background-image: url('../images/customer_reviews/tablet/ice-cream_background.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/customer_reviews/tablet/ice-cream_background@2x.png');
+    }
+  }
 
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url('../images/customer_reviews/tablet/ice-cream_background@2x.png');
-//     }
-//   }
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/customer_reviews/desktop/ice-cream_background.png');
 
-//   @media screen and (min-width: 1200px) {
-//     background-image: url('../images/customer_reviews/desktop/ice-cream_background.png');
-
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url('../images/customer_reviews/desktop/ice-cream_background@2x.png');
-//     }
-//   }
-// }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/customer_reviews/desktop/ice-cream_background@2x.png');
+    }
+  }
+}
 
 // ===============  SWIPER  =========================
 
@@ -120,5 +119,21 @@
   @media screen and (min-width: 1200px) {
     padding-top: 128px;
     margin-bottom: 72px;
+  }
+}
+
+.section__customers-reviews {
+  padding-bottom: 373px;
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 370px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 368px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 180px;
   }
 }
