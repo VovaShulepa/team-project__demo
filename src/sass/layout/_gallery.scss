@@ -72,24 +72,15 @@
 .gallery_slider .photo-1 {
   position: relative;
   animation: rotateY1 10s linear infinite;
-  backface-visibility: hidden;
 }
 
 .gallery_slider .photo-2 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
   animation: rotateY2 10s linear infinite;
-  backface-visibility: hidden;
 }
-
-// .gallery_slider .photo-3 {
-//   position: absolute;
-//   top: 0;
-//   animation: rotateY2 10s linear infinite;
-//   backface-visibility: hidden;
-// }
 
 @keyframes rotateY1 {
   0% {
