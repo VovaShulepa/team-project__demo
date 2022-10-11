@@ -24,7 +24,7 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.png" />
 
     <!-- ============= SWIPER CSS ================= -->
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css " />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
     <!-- ===============STYLES================ -->
     <link rel="stylesheet" href="./sass/index.scss" />
@@ -42,15 +42,18 @@
       <include src="./partials/products.html"></include>
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/customer_reviews.html"></include>
+
+      <div class="gallery-reviews__overlay">
+        <include src="./partials/gallery.html"></include>
+        <include src="./partials/customer_reviews.html"></include>
+      </div>
+
       <include src="./partials/contacts.html"></include>
     </main>
 
     <include src="./partials/footer.html"></include>
 
     <!-- ================  SWIPER  JS ========================= -->
-    <script src="swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="swiper/swiper-settings.js"></script> -->
+    <script src="./js/swiper-bundle.min.js"></script>
   </body>
 </html>

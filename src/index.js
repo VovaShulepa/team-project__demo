@@ -1,2 +1,2 @@
 
-import './swiper/swiper-settings'
+import './js/swiper-settings';
