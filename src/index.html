@@ -20,15 +20,19 @@
       rel="stylesheet"
     />
 
-    <!-- ==============FAVICON=================== -->
+    <!-- ==============FAVICON================ -->
     <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.png" />
+
+    <!-- ============= SWIPER CSS ================= -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
     <!-- ===============STYLES================ -->
     <link rel="stylesheet" href="./sass/index.scss" />
 
-    <!-- ============= SWIPER CSS ================= -->
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css " />
+    <!-- ==================JAVA SCRIPT ==================== -->
+    <script type="module" src="./index.js"></script>
   </head>
+
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
 
@@ -40,18 +44,18 @@
       <!-- modal_about -->
       <include src="./partials/about_modal.html"></include>
       <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/customer_reviews.html"></include>
+
+      <div class="gallery-reviews__overlay">
+        <include src="./partials/gallery.html"></include>
+        <include src="./partials/customer_reviews.html"></include>
+      </div>
+
       <include src="./partials/contacts.html"></include>
     </main>
 
     <include src="./partials/footer.html"></include>
 
-    <!-- ==================JAVA SCRIPT ==================== -->
-    <script type="module" src="./index.js"></script>
-
     <!-- ================  SWIPER  JS ========================= -->
-    <script src="swiper/swiper-bundle.min.js"></script>
-    <script src="swiper/swiper-settings.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
   </body>
 </html>
