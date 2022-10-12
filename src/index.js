@@ -1,4 +1,4 @@
-import './js/swiper-settings';
+
 
 // ======= header =========
 import './js/mobile-menu';
@@ -17,5 +17,4 @@ import './js/swiper-reviews';
 
 import './js/modal-contacts';
 import './js/modal-map';
-import './js/back-to-top';
 import './js/products-modal';
