@@ -1,2 +1,3 @@
 
-import './js/swiper-settings';
+import './js/swiper-reviews';
+import './js/swiper-gallery';
