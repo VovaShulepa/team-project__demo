@@ -5,6 +5,7 @@
     width: 100%;
     height: 100%;
     background-color: $backdrop;
+    z-index: 10;
 }
 
 .backdrop.is-hidden {
@@ -103,7 +104,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    width: 224px;
+   
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        max-width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 448px;
@@ -116,8 +121,12 @@
     font-family: $primary-font;
     font-size: 14px;
     line-height: 1.4;
-    width: 224px;
-    color: $black-text-color;
+       color: $black-text-color;
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        max-width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 448px;
