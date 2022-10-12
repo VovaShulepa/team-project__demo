@@ -111,7 +111,7 @@ img{
     pointer-events: none;
 
     background-color: $main-background-color;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     // transform: translateY(0);
@@ -119,6 +119,8 @@ img{
 
     transition: transform $main-transition;
     transition: opacity $main-transition;
+
+    z-index: 99999 !important;
 
 }
 
