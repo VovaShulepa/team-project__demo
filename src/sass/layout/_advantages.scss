@@ -14,7 +14,7 @@
 
 .advantages__list {
     list-style: none;
- 
+
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -37,6 +37,33 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+
+    // transition:  scale $main-transition;
+
+    // &:hover {
+    //     .advantages__text {
+    //         transform: scale(1.1);
+    //     }
+    // }
+
+    // &:hover.advantages__item-1 {
+    //     &::before {
+    //         transform: scale(1.1);
+    //     }
+    // }
+
+    // &:hover.advantages__item-2 {
+    //     &::before {
+    //         transform: scale(1.1);
+    //     }
+    // }
+
+    // &:hover.advantages__item-3 {
+    //     &::before {
+    //         transform: scale(1.1);
+    //     }
+    // }
+
     @media screen and (max-width: 767.8px) {
         &:not(:last-child) {
             margin-bottom: 95px;
@@ -143,6 +170,7 @@
     text-align: center;
 
     color: $white-text-color;
+    transition:  scale $main-transition;
 
     @media screen and (min-width: 768px) {
         font-weight: 400;
