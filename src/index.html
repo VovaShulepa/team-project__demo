@@ -46,39 +46,37 @@
       <include src="./partials/customer_reviews.html"></include>
     </div>
 
-    <include src="./partials/contacts.html"></include>
-  </main>
+    <include src="./partials/footer.html"></include>
 
-  <include src="./partials/footer.html"></include>
-
-  <!-- modal_about -->
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <h2 class="modal__title">How it’s made?</h2>
-      <!-- <video
+    <!-- modal_about -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h2 class="modal__title">How it’s made?</h2>
+        <video
           class="about__video"
           src="./video/Very Funny Video-Cow's Milk Competition.mp4"
           poster="./images/about/cow_s_.jpg"
           controls
-                 preload="auto"
-        ></video> -->
-      <iframe  class="about__video" src="https://www.youtube.com/embed/zwfdtfF6wV4" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      <p class="modal__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <button class="about__btn" data-modal-close>
-        <svg class="modal-icon" width="16" height="16">
-          <use href="./images/about/icon.svg#icon-modal-close"></use>
-        </svg>
-      </button>
+    preload="auto"
+          loop
+          preload="auto" ></video>
+
+       
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et
+        </p>
+        <button class="about__btn" data-modal-close>
+          <svg class="modal-icon" width="16" height="16">
+            <use href="./images/about/icon.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
-  <!-- кнопка прокрутки -->
+   <!-- ================  BUTTON UP ========================= -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"> <svg class="icon-up" width="26" height="26">
     <use href="./images/about/icon.svg#icon-up"></use>
   </svg></button>
@@ -90,4 +88,8 @@
   <script src="./js/about_modal.js"></script>
 </body>
 
+</html>
+    <!-- ================  SWIPER  JS ========================= -->
+    <script src="./js/swiper-bundle.min.js"></script>
+  </body>
 </html>
