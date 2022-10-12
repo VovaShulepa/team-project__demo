@@ -64,11 +64,11 @@
     text-decoration: none;
     display: inline-block;
 
-    // &:hover {
-    //     .modal-icon {
-    //         fill: $accent-color;
-    // } 
-    // }
+    &:hover {
+        .modal-icon {
+            fill: $accent-color;
+    } 
+    }
 
     @media screen and (min-width: 768px) {
         top: 20px;

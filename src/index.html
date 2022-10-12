@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ===========TITLE============== -->
-    <title>ICE CREAM</title>
 
-    <!-- =============FONTS=================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ===========TITLE============== -->
+  <title>ICE CREAM</title>
 
-    <!-- ============= FAVICON  ================ -->
-    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.png" />
+  <!-- =============FONTS=================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- ============= SWIPER CSS ================= -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <!-- ============= FAVICON  ================ -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.png" />
 
-    <!-- =============  STYLES  ================ -->
-    <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- ============= SWIPER CSS ================= -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
-    <!-- ============ JAVA SCRIPT ================= -->
-    <script type="module" src="./index.js"></script>
-  </head>
+  <!-- =============  STYLES  ================ -->
+  <link rel="stylesheet" href="./sass/index.scss" />
 
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+  <!-- ============ JAVA SCRIPT ================= -->
+  <script type="module" src="./index.js"></script>
+</head>
 
-    <include src="./partials/hero_header.html"></include>
+<body>
+  <!-- ❗️❗️❗️ Add partials like so for every page -->
 
-    <main>
-      <include src="./partials/products.html"></include>
-      <include src="./partials/about.html"></include>
+  <include src="./partials/hero_header.html"></include>
 
-      <include src="./partials/about_modal.html"></include>
-      <include src="./partials/advantages.html"></include>
+  <main>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
 
-      <div class="gallery-reviews__overlay">
-        <include src="./partials/gallery.html"></include>
-        <include src="./partials/customer_reviews.html"></include>
-      </div>
+    <include src="./partials/about_modal.html"></include>
+    <include src="./partials/advantages.html"></include>
 
-      <include src="./partials/contacts.html"></include>
-    </main>
-
+    <div class="gallery-reviews__overlay">
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer_reviews.html"></include>
+    </div>
+    <include src="./partials/button-up.html"></include>
     <include src="./partials/footer.html"></include>
 
     <!-- modal_about -->
@@ -82,11 +75,18 @@
         </button>
       </div>
     </div>
+  </div>
+   <!-- ================  BUTTON UP ========================= -->
+   <script src="./js/back-to-top.js"></script>
+  <!-- ================  SWIPER  JS ========================= -->
+  <script src="./js/swiper-bundle.min.js"></script>
 
+  <!-- ================  ABOUT_MODAL ========================= -->
+  <script src="./js/about_modal.js"></script>
+</body>
+
+</html>
     <!-- ================  SWIPER  JS ========================= -->
     <script src="./js/swiper-bundle.min.js"></script>
-
-    <!-- ================  ABOUT_MODAL ========================= -->
-    <script src="./js/about_modal.js"></script>
   </body>
 </html>
