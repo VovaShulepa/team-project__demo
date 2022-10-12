@@ -5,10 +5,11 @@ let swiper = new Swiper(".swiper", {
    loop: true,
    spaceBetween: 24,
   grabCursor: true,
-   speed: 3000,
- 
+  speed: 3000,
+  
+
         autoplay: {
-          delay: 4600,
+          delay: 4800,
           disableOnInteraction: false,
   },
         
