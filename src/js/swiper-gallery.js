@@ -1,6 +1,6 @@
 
 
-// ============================== SWIPER__Gallery ==========================
+// ============== SWIPER__Gallery ================
 
 
 let swiper = new Swiper(".swiper_gallery", {
@@ -12,7 +12,7 @@ let swiper = new Swiper(".swiper_gallery", {
     effect: "fade",
  
         autoplay: {
-          delay: 3600,
+          delay: 3500,
           disableOnInteraction: false,
   },
        
