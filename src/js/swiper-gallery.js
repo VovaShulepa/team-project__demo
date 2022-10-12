@@ -12,7 +12,7 @@ let swiper = new Swiper(".swiper_gallery", {
     effect: "fade",
  
         autoplay: {
-          delay: 3500,
+          delay: 3800,
           disableOnInteraction: false,
   },
        
