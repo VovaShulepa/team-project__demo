@@ -46,11 +46,11 @@
     margin-right: auto;
     margin-bottom: 32px;
 
-    transition: color $main-transition;
+    // transition: color $main-transition;
 
-    &:hover {
-        color: $yellow-color
-    }
+    // &:hover {
+    //     color: $yellow-color
+    // }
 
     @media screen and (max-width: 767.8px) {
         max-width: 200px;

@@ -31,9 +31,6 @@
     border: 2px solid #f8d24e;
     border-radius: 10px;
 
-    // transform: scale(1.1);
-    // transition:  scale $main-transition;
-
     @media screen and (min-width: 768px) {
         width: 568px;
         height: 449px;
@@ -67,11 +64,11 @@
     text-decoration: none;
     display: inline-block;
 
-    &:hover {
-        .modal-icon {
-            fill: $accent-color;
-    } 
-    }
+    // &:hover {
+    //     .modal-icon {
+    //         fill: $accent-color;
+    // } 
+    // }
 
     @media screen and (min-width: 768px) {
         top: 20px;
@@ -90,11 +87,11 @@
 
     color: $black-text-color;
 
-    transition: color $main-transition;
+    // transition: color $main-transition;
 
-    &:hover {
-        color: $accent-color;
-    }
+    // &:hover {
+    //     color: $accent-color;
+    // }
 
     @media screen and (min-width: 768px) {
         font-size: 20px;

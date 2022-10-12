@@ -14,7 +14,7 @@
 
 .advantages__list {
     list-style: none;
- 
+
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -38,43 +38,31 @@
     display: flex;
     flex-direction: column;
 
-    transition:  transform $main-transition;
+    // transition:  scale $main-transition;
 
-    &:hover {
-        .advantages__text {
-            transform: scale(1.3);
-        }
-    }
+    // &:hover {
+    //     .advantages__text {
+    //         transform: scale(1.1);
+    //     }
+    // }
 
-    &:hover {
-        .advantages__number {
-            transform: scale(1.3);
-         }
-    } 
+    // &:hover.advantages__item-1 {
+    //     &::before {
+    //         transform: scale(1.1);
+    //     }
+    // }
 
-    &:hover.advantages__item-1  {
-            &::before {transform: scale(1.2);
-                top: -80px;
-                width: 55px;
-                height: 55px;
-            }
-    } 
+    // &:hover.advantages__item-2 {
+    //     &::before {
+    //         transform: scale(1.1);
+    //     }
+    // }
 
-    &:hover.advantages__item-2  {
-        &::before {transform: scale(1.2);
-            top: -80px;
-            width: 55px;
-            height: 55px;
-        }
-} 
-
-&:hover.advantages__item-3  {
-    &::before {transform: scale(1.2);
-        top: -80px;
-        width: 55px;
-        height: 55px;
-    }
-} 
+    // &:hover.advantages__item-3 {
+    //     &::before {
+    //         transform: scale(1.1);
+    //     }
+    // }
 
     @media screen and (max-width: 767.8px) {
         &:not(:last-child) {
@@ -99,7 +87,7 @@
 }
 
 .advantages__item-1 {
-       &::before {
+    &::before {
         display: block;
         content: "";
         position: absolute;
@@ -114,17 +102,10 @@
         background-image: url(../images/advantages/cow.png);
         background-repeat: no-repeat;
         background-position: center;
-
-        // transition:  transform $main-transition;
-        // transition:  top $main-transition;
-        // transition:  width $main-transition;
-        // transition:  height $main-transition;
-            }
+    }
 }
 
 .advantages__item-2 {
-    transition:  transform $main-transition;
-
     &::before {
         display: block;
         content: "";
@@ -141,14 +122,11 @@
         background-image: url(../images/advantages/weight.png);
         background-repeat: no-repeat;
         background-position: center;
-
-        // transition:  transform $main-transition;
-        // transition:  top $main-transition;
     }
 }
 
 .advantages__item-3 {
-       &::before {
+    &::before {
         content: "";
         position: absolute;
         top: -66px;
@@ -162,9 +140,6 @@
         background-image: url(../images/advantages/ice-cream.png);
         background-repeat: no-repeat;
         background-position: center;
-
-        // transition:  transform $main-transition;
-        // transition:  top $main-transition;
     }
 }
 
@@ -181,8 +156,6 @@
 
     color: $white-text-color;
 
-    transition:  transform $main-transition;
-   
     @media screen and (min-width: 1200px) {
         margin-bottom: 16px;
     }
@@ -197,8 +170,7 @@
     text-align: center;
 
     color: $white-text-color;
-
-    transition:  transform $main-transition;
+    transition:  scale $main-transition;
 
     @media screen and (min-width: 768px) {
         font-weight: 400;
