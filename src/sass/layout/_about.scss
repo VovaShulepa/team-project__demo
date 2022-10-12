@@ -85,11 +85,11 @@
 
     // transition: transform $main-transition;
  
-    &:hover {
-        .about__img {
-            transform: scale(0.9);
-        }
-    }
+    // &:hover {
+    //     .about__img {
+    //         transform: scale(0.9);
+    //     }
+    // }
 
     @media screen and (max-width: 479px) {
         max-width: 278px;
@@ -120,7 +120,7 @@
     border-radius: 50%;
     width: 100%;
 
-    transition: transform $main-transition;
+    // transition: transform $main-transition;
 
     @media screen and (min-width: 768px) {
         width: 278px;
