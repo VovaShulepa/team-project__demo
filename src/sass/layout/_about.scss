@@ -85,7 +85,7 @@
 
     &:hover {
         .about__img {
-            transform: scale(1.5);
+            transform: scale(0.9);
         }
     }
 
@@ -117,10 +117,6 @@
 
     border-radius: 50%;
     width: 100%;
-
-    //  &:hover {
-    //     transform: scale (1.5);
-    //  }
 
     @media screen and (min-width: 768px) {
         width: 278px;
