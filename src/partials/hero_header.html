@@ -20,46 +20,6 @@
       aria-controls="mobile-menu"
       type="button"
     >
-      <!-- <svg
-        class="main-header__burger-menu-icon main-header__burger-menu--burger-icon"
-        width="32"
-        height="32"
-        viewBox="0 0 32 32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M6 10H26"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-        <path
-          d="M6 16H26"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-        <path
-          d="M6 22H26"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-      </svg> -->
-      <!-- CLOSE ICON -->
-      <!-- <svg
-        class="main-header__burger-menu-icon main-header__burger-menu-icon--close-icon"
-        width="32"
-        height="32"
-        viewBox="0 0 32 32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M23.884 6.70597L16 14.59L8.11602 6.70597C7.9264 6.53245 7.67714 6.43878 7.42017 6.44448C7.1632 6.45017 6.91833 6.55479 6.73658 6.73654C6.55484 6.91829 6.45022 7.16315 6.44452 7.42012C6.43883 7.67709 6.5325 7.92635 6.70602 8.11597L14.586 16L6.70402 23.882C6.60773 23.9737 6.53075 24.0838 6.47761 24.2058C6.42448 24.3277 6.39626 24.4591 6.39461 24.5921C6.39296 24.7251 6.41792 24.8571 6.46802 24.9803C6.51812 25.1035 6.59235 25.2155 6.68634 25.3096C6.78033 25.4038 6.89219 25.4781 7.01535 25.5284C7.1385 25.5787 7.27046 25.6038 7.40348 25.6024C7.53649 25.6009 7.66787 25.5729 7.78989 25.5199C7.91191 25.467 8.02211 25.3901 8.11402 25.294L16 17.412L23.884 25.296C24.0736 25.4695 24.3229 25.5632 24.5799 25.5575C24.8368 25.5518 25.0817 25.4472 25.2635 25.2654C25.4452 25.0837 25.5498 24.8388 25.5555 24.5818C25.5612 24.3249 25.4675 24.0756 25.294 23.886L17.41 16.002L25.294 8.11597C25.3903 8.0242 25.4673 7.91411 25.5204 7.79216C25.5736 7.67022 25.6018 7.53888 25.6034 7.40587C25.6051 7.27286 25.5801 7.14086 25.53 7.01763C25.4799 6.89441 25.4057 6.78244 25.3117 6.68832C25.2177 6.59419 25.1058 6.5198 24.9827 6.46953C24.8595 6.41926 24.7276 6.39411 24.5946 6.39557C24.4616 6.39703 24.3302 6.42506 24.2082 6.47802C24.0861 6.53099 23.9759 6.60781 23.884 6.70397V6.70597Z"
-          fill="currentColor"
-        />
-      </svg> -->
-
       <!-- SVG SPRITE -->
       <svg class="main-header__burger-menu-icon" width="32px" height="32px">
         <use
@@ -67,35 +27,87 @@
         ></use>
       </svg>
     </button>
-    <!-- <svg class="main-header__burger-menu-icon" width="32px" height="32px">
-      <use
-        href="./images/hero_header/icons-sprite.svg#icon-burger-menu-close-btn"
-      ></use>
-  </svg> -->
+
     <button class="buy-now-btn buy-now-btn--header" type="button">
       Buy now
-      <div class="buy-now-btn__container"></div>
+      <svg class="buy-now-btn__icon" width="12px" height="12px">
+        <use
+          href="./images/hero_header/icons-sprite.svg#icon-greater-than"
+        ></use>
+      </svg>
     </button>
   </div>
 </header>
 
 <section class="section-hero">
-  <div class="section-hero__wrapper container">
-    <div></div>
-    <h1 class="section-hero__title">
-      ice cream made with
-      <span class="section-hero__passion-span">passion</span>
-    </h1>
-    <div class="section-hero__links-wrapper">
-      <a class="section-hero__btn" href="#">Products</a>
-      <a class="section-hero__link" href="#">How it’s made?</a>
-    </div>
+  <div class="section-hero__container container">
+    <div class="section-hero__wrapper">
+      <h1 class="section-hero__title">
+        ice cream made with
+        <span class="section-hero__passion-span">passion</span>
+      </h1>
+      <div class="section-hero__links-wrapper">
+        <a class="section-hero__btn" href="#">Products</a>
+        <a class="section-hero__link" href="#">How it’s made?</a>
+      </div>
 
-    <img
-      class="section-hero__img"
-      src="././images/hero_header/ice-cream-cone-mobile/ice-cream.png"
-      alt="IceCream Cone with smiling faces"
-    />
+      <div class="section-hero__photo-and-text-wrapper">
+        <div class="section-hero__photo">
+          <img
+            class="section-hero__ice-cream-dish-img"
+            srcset="
+              ././images/hero_header/dish-with-ice-cream/dish-tablet.png      152w,
+              ././images/hero_header/dish-with-ice-cream/dish-tablet-1@2x.png 304w,
+              ././images/hero_header/dish-with-ice-cream/dish-desktop.png     225w,
+              ././images/hero_header/dish-with-ice-cream/dish-desktop1@2x.png 450w
+            "
+            sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px"
+            src="././images/hero_header/dish-with-ice-cream/dish-tablet.png"
+            alt="Dish with IceCream"
+          />
+        </div>
+        <div class="section-hero__text-and-arrow-wrapper">
+          <p class="section-hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <!-- ARROW SVG -->
+          <a class="section-hero__arrow-link" href="#">
+            <svg class="section-hero__arrow" width="" height="">
+              <use
+                href="./images/hero_header/icons-sprite.svg#icon-arrow"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <aside class="section-hero__aside">
+      <p class="section-hero__stats">
+        <span class="section-hero__stats-number">16</span> <br />cafes
+      </p>
+      <p class="section-hero__stats">
+        <span class="section-hero__stats-number">23</span> <br />food tracs
+      </p>
+    </aside>
+
+    <!-- HERO IMAGE -->
+    <div class="section-hero__ice-cone-wapper">
+      <img
+        class="section-hero__ice-cone-img"
+        srcset="
+          ././images/hero_header/ice-cone-mobile/ice-cone-mobile.png      170w,
+          ././images/hero_header/ice-cone-mobile/ice-cone-mobile@2x.png   340w,
+          ././images/hero_header/ice-cone-tablet/ice-cone-tablet.png      270w,
+          ././images/hero_header/ice-cone-tablet/ice-cone-tablet@2x.png   540w,
+          ././images/hero_header/ice-cone-desktop/ice-cone-desktop.png    484w,
+          ././images/hero_header/ice-cone-desktop/ice-cone-desktop@2x.png 968w
+        "
+        sizes="(min-width: 1200px) 484px, (min-width: 768px) 270px, (min-width: 320px) 170px"
+        src="././images/hero_header/ice-cone-mobile/ice-cone-mobile@2x.png"
+        alt="IceCream Cone with smiling faces"
+      />
+    </div>
   </div>
 </section>
 
@@ -130,15 +142,6 @@
     <button class="buy-now-btn buy-now-btn--open-menu" type="button">
       Buy now
       <div class="buy-now-btn__container"></div>
-      <!-- <img class="buy-now-btn__greater-than-png"
-        src="./images/hero_header/button/greater-than@3.png"
-        alt="shavron decoration"
-      /> -->
-      <!-- <svg class="button__icon-greater-than" width="12px" height="12px">
-        <use
-          href="./images/hero_header/icons-sprite.svg#icon-greater-than"
-        ></use>
-      </svg> -->
     </button>
   </div>
 </div>
