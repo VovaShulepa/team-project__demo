@@ -14,7 +14,24 @@
         padding-bottom: 60px;
     }
 }
+.container-contacts{
+    position: relative;
+    margin-bottom: -345px;
+    top:-345px;
 
+    @media screen and(min-width:768px){
+
+        position: relative;
+            margin-bottom: -320px;
+            top: -320px;
+    }
+        @media screen and(min-width:1200px) {
+    
+            position: relative;
+            margin-bottom: -95px;
+            top: -95px;
+        }
+}
 .contacts__list {
     
 
