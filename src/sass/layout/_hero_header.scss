@@ -419,11 +419,11 @@ img{
     min-width: 170px;
 
     @media screen and (min-width: 768px) {
-        transform: translateX(33px);
+        transform: translateX(-11px);
 
     }
     @media screen and (min-width: 1200px) {
-        transform: translateX(0);
+        transform: translateX(-45px);
 
     }
 }
