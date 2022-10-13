@@ -12,7 +12,7 @@
     background-image: url('/src/images/products/background-m2x-min.png');
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     background-image: url('/src/images/products/background-t-min.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -22,7 +22,7 @@
     }
   }
 
-  @media screen and (min-width: 1201px) {
+  @media screen and (min-width: 1200px) {
     background-image: url('/src/images/products/background-d-min.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -118,6 +118,7 @@
   padding-top: 123px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 20px;
   text-align: center;
 
   display: flex;
@@ -138,6 +139,7 @@
     padding-top: 166px;
     padding-left: 61px;
     padding-right: 61px;
+    padding-bottom: 60px;
   }
 }
 
@@ -305,7 +307,6 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  margin-bottom: 20px;
   width: 40px;
   height: 16px;
   background-image: url('../images/products/icon-arrow.svg');
@@ -314,10 +315,6 @@
   background-position: 50% 50%;
   background-size: contain;
   transition: background-image 400ms linear, transform 400ms ease;
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 60px;
-  }
 
   &:hover {
     background-image: url('../images/products/icon-arrow-hover.svg');
