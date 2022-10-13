@@ -1,10 +1,33 @@
 <header class="main-header">
   <div class="main-header__wrapper container">
-    <img
-      class="main-header__logo"
-      src="./images/hero_header/logo-mobile/logo-m-@3x.png"
-      alt="IceCream Logo"
-    />
+    <picture class="main-header__logo">
+      <source
+        srcset="
+          ./images/hero_header/logo-d/logo-d-1x.png 1x,
+          ./images/hero_header/logo-d/logo-d-2x.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero_header/logo-t/logo-t-1x.png 1x,
+          ./images/hero_header/logo-t/logo-t-2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/hero_header/logo-m/logo-m-1x.png 1x,
+          ./images/hero_header/logo-m/logo-m-2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img
+        class="main-header__logo"
+        src="./images/hero_header/logo-m/logo-m-1x.png"
+        alt="IceCream Logo"
+      />
+    </picture>
 
     <nav class="main-nav">
       <ul class="main-nav__list">
@@ -115,11 +138,34 @@
 
 <div class="menu-container js-menu-container" id="mobile-menu">
   <div class="menu-container__wrapper container">
-    <img
-      class="main-header__logo"
-      src="./images/hero_header/logo-mobile/logo-m-@3x.png"
-      alt="IceCream Logo"
-    />
+    <picture class="main-header__logo">
+      <source
+        srcset="
+          ./images/hero_header/logo-d/logo-d-1x.png 1x,
+          ./images/hero_header/logo-d/logo-d-2x.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero_header/logo-t/logo-t-1x.png 1x,
+          ./images/hero_header/logo-t/logo-t-2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/hero_header/logo-m/logo-m-1x.png 1x,
+          ./images/hero_header/logo-m/logo-m-2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img
+        class="main-header__logo"
+        src="./images/hero_header/logo-m/logo-m-1x.png"
+        alt="IceCream Logo"
+      />
+    </picture>
 
     <button
       class="main-header__menu-toggle menu-toggle js-close-menu"
@@ -143,7 +189,11 @@
 
     <button class="buy-now-btn buy-now-btn--open-menu" type="button">
       Buy now
-      <div class="buy-now-btn__container"></div>
+      <svg class="buy-now-btn__icon" width="12px" height="12px">
+        <use
+          href="./images/hero_header/icons-sprite.svg#icon-greater-than"
+        ></use>
+      </svg>
     </button>
   </div>
 </div>
@@ -154,6 +204,7 @@
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous"
 ></script>
+
 <script>
   (() => {
     const mobileMenu = document.querySelector('.js-menu-container');
@@ -184,4 +235,5 @@
     });
   })();
 </script>
+
 <script defer src="./js/mobile-menu.js"></script>
