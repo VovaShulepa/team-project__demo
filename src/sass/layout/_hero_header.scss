@@ -309,7 +309,7 @@ img{
         background-image:
         url(../images/hero_header/bg/bg-dots-desktop/desktop-1x.png);
         background-repeat: no-repeat;
-        background-position: bottom left, bottom right;
+        background-position: bottom;
         background-size: contain;
 
         @media (min-device-pixel-ratio: 2),
@@ -317,7 +317,7 @@ img{
         (min-resolution: 2dppx) {
         background-image: url(../images/hero_header/bg/bg-dots-desktop/desktop-2x.png);
         background-repeat: no-repeat;
-        background-position: bottom left, bottom right;
+        background-position: bottom;
         background-size: contain;
       }
     }
