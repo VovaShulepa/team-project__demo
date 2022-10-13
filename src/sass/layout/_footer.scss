@@ -194,9 +194,10 @@
 .socials__item {
     width: 35px;
     height: 35px;
+   
+    }
 
 
-}
 
 .socials__link:focus .page-footer__icon {
     width: 38px;
@@ -207,8 +208,21 @@
 .socials__link:hover .page-footer__icon {
     width: 32px;
     height: 32px;
-    fill: $footer-cards-background;
 
+    fill: $footer-cards-background;
+    animation: rotate-hor-center .5s cubic-bezier(.785, .135, .15, .86) both;
+    
+
+}
+@keyframes rotate-hor-center{
+    0%{
+        transform: rotateX(0);
+
+    }
+    100%{
+        transform: rotateX(-360deg);
+        
+    }
 }
 
 .page-footer__icon {
