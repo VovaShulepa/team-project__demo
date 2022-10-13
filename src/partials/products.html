@@ -1,7 +1,7 @@
-<section class="products products__section">
+<section class="products products__section" id="products">
   <div class="container">
     <p class="products__label">100% natural</p>
-    <h2 class="products__title" id="products">products</h2>
+    <h2 class="products__title">products</h2>
     <ul class="products__list">
       <li class="products__card products__card--ice">
         <div class="products__meta">
@@ -48,69 +48,71 @@
     </ul>
   </div>
 </section>
+<!-- PRODUCTS MODAL -->
 <div class="products-backdrop is-hidden" data-products-modal>
   <div class="products-modal">
-    <button
-      type="button"
-      class="products-modal__button--close"
-      data-products-modal-close
-    >
-      <svg class="products-icon-close" width="16" height="16">
-        <use href="./images/about/icon.svg#icon-modal-close"></use>
-      </svg>
-    </button>
-    <h2 class="products-modal__title">Chololate icecream</h2>
-    <picture>
-      <source
-        srcset="
-          ./images/products/products-modal-icecream.png    1x,
-          ./images/products/products-modal-icecream@2x.png 2x
-        "
-      />
-      <img
-        class="products-modal__img"
-        src="./images/products/products-modal-icecream.png"
-        alt="icecream"
-      />
-    </picture>
-    <ul class="products-modal__ovals-list">
-      <li class="products-modal__oval">
-        <div class="products-modal__round">320</div>
-        <span class="products-modal__oval-text">kcal</span>
-      </li>
-      <li class="products-modal__oval">
-        <div class="products-modal__round">4g</div>
-        <span class="products-modal__oval-text">Protein</span>
-      </li>
-      <li class="products-modal__oval">
-        <div class="products-modal__round">8,2g</div>
-        <span class="products-modal__oval-text">Fats</span>
-      </li>
-      <li class="products-modal__oval">
-        <div class="products-modal__round">40,4g</div>
-        <span class="products-modal__oval-text">Carbs</span>
-      </li>
-    </ul>
-    <p class="products-modal__subtitle">Ingredients</p>
-    <div class="products-modal__meta">
-      <ul class="products-modal__name-list">
-        <li class="products-modal__name">Milk</li>
-        <li class="products-modal__name">Belgian chocolate</li>
-        <li class="products-modal__name">Cream</li>
-        <li class="products-modal__name">Cocoa powder</li>
-        <li class="products-modal__name">Sugar</li>
-        <li class="products-modal__name">Vanilla sugar</li>
-      </ul>
-      <ul class="products-modal__amount-list">
-        <li class="products-modal___amount">100ml</li>
-        <li class="products-modal___amount">20g</li>
-        <li class="products-modal___amount">150 ml</li>
-        <li class="products-modal___amount">30g</li>
-        <li class="products-modal___amount">40g</li>
-        <li class="products-modal___amount">10g</li>
-      </ul>
-    </div>
     <form class="products-modal__form" name="products-modal__form">
+      <button
+        type="button"
+        class="products-modal__button--close"
+        data-products-modal-close
+      >
+        <svg class="products-icon-close" width="16" height="16">
+          <use href="./images/about/icon.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <h2 class="products-modal__title">Chololate icecream</h2>
+      <picture>
+        <source
+          srcset="
+            ./images/products/products-modal-icecream.png    1x,
+            ./images/products/products-modal-icecream@2x.png 2x
+          "
+        />
+        <img
+          class="products-modal__img"
+          src="./images/products/products-modal-icecream.png"
+          alt="icecream"
+        />
+      </picture>
+      <ul class="products-modal__ovals-list">
+        <li class="products-modal__oval">
+          <div class="products-modal__round">320</div>
+          <span class="products-modal__oval-text">kcal</span>
+        </li>
+        <li class="products-modal__oval">
+          <div class="products-modal__round">4g</div>
+          <span class="products-modal__oval-text">Protein</span>
+        </li>
+        <li class="products-modal__oval">
+          <div class="products-modal__round">8,2g</div>
+          <span class="products-modal__oval-text">Fats</span>
+        </li>
+        <li class="products-modal__oval">
+          <div class="products-modal__round">40,4g</div>
+          <span class="products-modal__oval-text">Carbs</span>
+        </li>
+      </ul>
+      <p class="products-modal__subtitle">Ingredients</p>
+      <div class="products-modal__meta">
+        <ul class="products-modal__name-list">
+          <li class="products-modal__name">Milk</li>
+          <li class="products-modal__name">Belgian chocolate</li>
+          <li class="products-modal__name">Cream</li>
+          <li class="products-modal__name">Cocoa powder</li>
+          <li class="products-modal__name">Sugar</li>
+          <li class="products-modal__name">Vanilla sugar</li>
+        </ul>
+        <ul class="products-modal__amount-list">
+          <li class="products-modal___amount">100ml</li>
+          <li class="products-modal___amount">20g</li>
+          <li class="products-modal___amount">150 ml</li>
+          <li class="products-modal___amount">30g</li>
+          <li class="products-modal___amount">40g</li>
+          <li class="products-modal___amount">10g</li>
+        </ul>
+      </div>
+
       <div class="products-modal__inputs--wrap">
         <label class="products-modal__label">
           <input
