@@ -4,18 +4,17 @@
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
     body: document.body,
-    // videoEl: document.querySelector('.about__video'),
+    videoEl: document.querySelector('.about__video'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', () => {
-    // refs.videoEl.pause();
+    refs.videoEl.pause();
     toggleModal();
   });
 
   function toggleModal() {
-
-    refs.modal.classList.toggle('is-hidden');
+        refs.modal.classList.toggle('is-hidden');
     document.body.classList.toggle('no-scroll');
   }
 })();
