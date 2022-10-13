@@ -8,10 +8,10 @@
 
     <nav class="main-nav">
       <ul class="main-nav__list">
-        <li><a href="#1" class="main-nav__link">Home</a></li>
-        <li><a href="#2" class="main-nav__link">How it’s made?</a></li>
-        <li><a href="#3" class="main-nav__link">Our products</a></li>
-        <li><a href="#4" class="main-nav__link">Contact</a></li>
+        <li><a href="#" class="main-nav__link">Home</a></li>
+        <li><a href="#how-its-made" class="main-nav__link">How it’s made?</a></li>
+        <li><a href="#products" class="main-nav__link">Our products</a></li>
+        <li><a href="#contacts" class="main-nav__link">Contact</a></li>
       </ul>
     </nav>
     <button
@@ -47,8 +47,8 @@
         <span class="section-hero__passion-span">passion</span>
       </h1>
       <div class="section-hero__links-wrapper">
-        <a class="section-hero__btn" href="#">Products</a>
-        <a class="section-hero__link" href="#">How it’s made?</a>
+        <a class="section-hero__btn" href="#products">Products</a>
+        <a class="section-hero__link" href="#how-its-made">How it’s made?</a>
       </div>
 
       <div class="section-hero__photo-and-text-wrapper">
@@ -152,4 +152,32 @@
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous"
 ></script>
+<script>(() => {
+  const mobileMenu = document.querySelector('.js-menu-container');
+  const openMenuBtn = document.querySelector('.js-open-menu');
+  const closeMenuBtn = document.querySelector('.js-close-menu');
+
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
+
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
+  };
+
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
+
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-open');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
+  });
+})();</script>
 <script defer src="./js/mobile-menu.js"></script>

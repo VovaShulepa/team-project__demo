@@ -132,7 +132,7 @@ img{
 .main-header__burger-menu-icon--close-icon{
 
 }
-
+// dstdts
 .is-open{
     // transform: translateY(100%);
     opacity: 1;
@@ -419,11 +419,11 @@ img{
     min-width: 170px;
 
     @media screen and (min-width: 768px) {
-        transform: translateX(33px);
+        transform: translateX(-11px);
 
     }
     @media screen and (min-width: 1200px) {
-        transform: translateX(0);
+        transform: translateX(-45px);
 
     }
 }
@@ -433,7 +433,7 @@ img{
 }
 
 
-
+// added comment
 .section-hero__photo-and-text-wrapper{
     display: none;
     @media screen and (min-width: 768px) {

@@ -1,4 +1,5 @@
 
+
 // ======= header =========
 import './js/mobile-menu';
 
@@ -16,3 +17,4 @@ import './js/swiper-reviews';
 
 import './js/modal-contacts';
 import './js/modal-map';
+import './js/products-modal';
