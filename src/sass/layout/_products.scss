@@ -322,14 +322,14 @@
   &:hover {
     background-image: url('../images/products/icon-arrow-hover.svg');
     width: 51px;
-    transform: rotate(360deg);
+    transform: rotateX(180deg);
   }
 
   &:focus {
     background-image: url('../images/products/icon-arrow-focus.svg');
     width: 52px;
     height: 24px;
-    transform: rotate(360deg);
+    transform: rotateX(180deg);
   }
 }
 
@@ -356,6 +356,12 @@
 .products-backdrop.is-hidden .products-modal {
   transform: translate(-50%, -50%) scale(0) rotate(0);
   opacity: 0;
+}
+
+.products-modal__overflow {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .products-modal {
