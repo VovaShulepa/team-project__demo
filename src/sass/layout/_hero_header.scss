@@ -18,6 +18,15 @@ img{
 .main-header__logo{
     width: 40.5px;
     height: 37px;
+
+    @media screen and (min-width: 768px) {
+        width: 48px;
+        height: 44px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 60px;
+        height: 65px;
+    }
 }
 
 
@@ -252,11 +261,21 @@ img{
 
     @media screen and (max-width: 479px) {
         height: calc(502 - 72);
-        background-image: 
-        url(../images/hero_header/left-dots-mobile/left-dots.png),
-        url(../images/hero_header/right-dots-mobile/right-dots.png);
+
+        background-image:
+        url(../images/hero_header/bg/bg-dots-mobile-left/mobile-left-1x.png),
+        url(../images/hero_header/bg/bg-dots-mobile-right/mobile-right-1x.png);
         background-repeat: no-repeat;
         background-position: bottom left, bottom right;
+        background-size: 37%;
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero_header/bg/bg-dots-mobile-left/mobile-left-2x.png),
+        url(../images/hero_header/bg/bg-dots-mobile-right/mobile-right-2x.png);
+      }
     }
 
     @media screen and (max-width: 767px) {
@@ -268,20 +287,39 @@ img{
         height: calc(415 - 72);
 
         background-image:
-        url(../images/hero_header/left-dots-tablet/left-dots.png),
-        url(../images/hero_header/right-dots-tablet/right-dots.png);
+        url(../images/hero_header/bg/bg-dots-tablet-left/tablet-left-1x.png),
+        url(../images/hero_header/bg/bg-dots-tablet-right/tablet-right-1x.png);
         background-repeat: no-repeat;
         background-position: bottom left, bottom right;
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: 
+        url(../images/hero_header/bg/bg-dots-tablet-left/tablet-left-2x.png),
+        url(../images/hero_header/bg/bg-dots-tablet-right/tablet-right-2x.png);
+        background-size: 20%, 27%;
+      }
     }
 
     @media screen and (min-width: 1200px) {
         height: calc(664 - 72);
 
         background-image:
-        url(../images/hero_header/left-dots-tablet/left-dots.png),
-        url(../images/hero_header/right-dots-tablet/right-dots.png);
+        url(../images/hero_header/bg/bg-dots-desktop/desktop-1x.png);
         background-repeat: no-repeat;
         background-position: bottom left, bottom right;
+        background-size: contain;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero_header/bg/bg-dots-desktop/desktop-2x.png);
+        background-repeat: no-repeat;
+        background-position: bottom left, bottom right;
+        background-size: contain;
+      }
     }
 
 }
@@ -289,17 +327,24 @@ img{
 .section-hero__container{
     display: flex;
     justify-content: space-between;
-}
-.section-hero__container{
-    display: flex;
+
     @media screen and (min-width: 480px) and (max-width: 767px){
         height: 100%;
-        background-image: 
-        url(../images/hero_header/left-dots-mobile/left-dots.png),
-        url(../images/hero_header/right-dots-mobile/right-dots.png);
-        background-repeat: no-repeat, no-repeat;
+
+        background-image:
+        url(../images/hero_header/bg/bg-dots-mobile-left/mobile-left-1x.png),
+        url(../images/hero_header/bg/bg-dots-mobile-right/mobile-right-1x.png);
+        background-repeat: no-repeat;
         background-position: bottom left, bottom right;
-        }
+        background-size: 35%;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero_header/bg/bg-dots-mobile-left/mobile-left-2x.png),
+        url(../images/hero_header/bg/bg-dots-mobile-right/mobile-right-2x.png);
+      }
+    }
 }
 
 .section-hero__title{
