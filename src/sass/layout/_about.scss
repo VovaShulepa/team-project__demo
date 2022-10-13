@@ -209,9 +209,11 @@
     background-color: $yellow-color;
     border-radius: 10px;
     transition:  background-color $main-transition;
+transition: $button-transition;
 
     &:hover {
         background-color: $accent-color;
+        transform: rotateX(360deg);
     }
 
     &:focus {
@@ -246,5 +248,15 @@
 
     &:focus {
         color: $white-text-color;
+    }
+}
+
+@keyframes rotate-hor-center{
+    0%{
+        transform: rotateX(0);
+
+    }
+    100%{
+        transform: rotateX(-360deg);
     }
 }
