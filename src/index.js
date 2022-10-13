@@ -1,20 +1,18 @@
 
-
 // ======= header =========
 import './js/mobile-menu';
 
 
 // ======  about  =========
-
 import './js/about_modal';
 
-// ======== gallery =======
 
+// ======== gallery =======
 import './js/swiper-gallery';
 import './js/swiper-reviews';
 
-// ======= footer =========
 
+// ======= footer =========
 import './js/modal-contacts';
 import './js/modal-map';
 import './js/products-modal';
