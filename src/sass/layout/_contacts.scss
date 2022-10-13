@@ -1,322 +1,280 @@
-
 .contacts {
-   
+  padding-bottom: 19.5px;
+  background-color: $main-background-color;
 
-    padding-bottom: 19.5px;
-    background-color: $main-background-color;
+  @media screen and(min-width:768px) {
+    padding-bottom: 20px;
+  }
 
-    @media screen and(min-width:768px) {
-        padding-bottom: 20px;
-
-    }
-
-    @media screen and(min-width:1200px) {
-        padding-bottom: 60px;
-    }
+  @media screen and(min-width:1200px) {
+    padding-bottom: 60px;
+  }
 }
-.container-contacts{
+.container-contacts {
+  position: relative;
+  margin-bottom: -345px;
+  top: -345px;
+
+  @media screen and(min-width:768px) {
     position: relative;
-    margin-bottom:-345px;
-    top:-345px;
-
-  
-
-    @media screen and(min-width:768px){
-
-        position: relative;
-            margin-bottom: -320px;
-            top: -320px;
-    }
-        @media screen and(min-width:1200px) {
-    
-            position: relative;
-            margin-bottom: -95px;
-            top: -95px;
-        }
+    margin-bottom: -320px;
+    top: -320px;
+  }
+  @media screen and(min-width:1200px) {
+    position: relative;
+    margin-bottom: -95px;
+    top: -95px;
+  }
 }
 .contacts__list {
-    
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 32px;
+  @media screen and(min-width:768px) {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 60px;
+  }
 
-    @media screen and(min-width:768px) {
-       
-        display: flex;
-        gap: 16px;
-        margin-bottom: 60px;
-    }
-
-    @media screen and(min-width:1200px) {
-       
-        gap: 32px;
-        margin-bottom: 64px;
-    }
+  @media screen and(min-width:1200px) {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
 }
 
 .contacts__shop {
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  @media screen and(max-width:767.9px) {
+    margin-bottom: 19px;
+    background-color: $footer-cards-background;
+    padding: 40px 32px;
+    // width: 280px;
+    // min-width: 200px;
+    max-width: 480px;
 
-    @media screen and(max-width:767.9px) {
-        margin-bottom: 19px;
-        background-color: $footer-cards-background ;
-        padding: 40px 32px;
-        // width: 280px;
-        // min-width: 200px;
-        max-width: 480px;
+    border-radius: 24px;
 
-        border-radius: 24px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 
-    @media screen and(min-width:768px) {
-        padding: 40px 24px;
-        width: 224px;
-        background-color: $footer-cards-background ;
-        border-radius: 24px;
-    }
+  @media screen and(min-width:768px) {
+    padding: 40px 24px;
+    width: 224px;
+    background-color: $footer-cards-background;
+    border-radius: 24px;
+  }
 
-    @media screen and(min-width:1200px) {
-
-        padding: 40px;
-        width: 368px;
-
-    }
+  @media screen and(min-width:1200px) {
+    padding: 40px;
+    width: 368px;
+  }
 }
 
 .shop__type {
-    margin-bottom: 32px;
-    height: 28px;
-    width: max-content;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $black-text-color;
-    background-color: $yellow-color;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
-    padding: 0 24px;
-    font-weight: 500;
-    line-height: 1.8;
-    display: flex;
+  margin-bottom: 32px;
+  height: 28px;
+  width: max-content;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $black-text-color;
+  background-color: $yellow-color;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  font-weight: 500;
+  line-height: 1.8;
+  display: flex;
 }
 
-
 .shop__location {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 
-    @media screen and(min-width:768px) and(max-width:1199px) {
-        margin-bottom: 12px;
-    }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-bottom: 12px;
+  }
 }
 
 .shop__link {
-    margin-bottom: 24px;
-    font-family: $primary-font;
-    font-weight: 500;
-    display: block;
-    color: $card-3-background;
-    font-size: 12px;
-    line-height: 1.83;
-    letter-spacing: 0.04em;
-    color: #D6936D;
+  margin-bottom: 24px;
+  font-family: $primary-font;
+  font-weight: 500;
+  display: block;
+  color: $card-3-background;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #d6936d;
 
+  &:hover {
+    text-decoration: underline;
+  }
 
-    &:hover {
-        text-decoration: underline;
-    }
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: 1.81;
+    margin-bottom: 32px;
+  }
 
-    @media screen and(min-width:768px) {
-        font-size: 14px;
-        line-height: 1.81;
-        margin-bottom: 32px;
-    }
-
-    @media screen and(min-width:1200px) {
-        font-size: 15px;
-
-
-    }
+  @media screen and(min-width:1200px) {
+    font-size: 15px;
+  }
 }
 
 .shop__content--after::after {
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: #e1e1e1;
-    display: block;
-    margin-bottom: 24px;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: #e1e1e1;
+  display: block;
+  margin-bottom: 24px;
 
-    @media screen and(min-width:768px) {
-        margin-bottom: 32px;
-    }
-
-
+  @media screen and(min-width:768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .shop__weekdays {
-    color: $black-text-color;
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 12px;
+  color: $black-text-color;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 12px;
 
-    @media screen and(min-width:768px) {
-        margin-bottom: 12px;
-        line-height: 1.81;
-        font-size: 14px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 12px;
+    line-height: 1.81;
+    font-size: 14px;
+  }
 
-
-    }
-
-    @media screen and(min-width:1200px) {
-        font-size: 16px;
-    }
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+  }
 }
 
 .shop__weekends {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    @media screen and(min-width:768px) {
-        margin-bottom: 32px;
-    }
-
-
+  @media screen and(min-width:768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .shop__time {
-    color: #ABABAB;
-
-
-
+  color: #ababab;
 }
 
 .shop__contact {
-    display: block;
-    color: $black-text-color;
-    font-weight: 500;
-    font-size: 12px;
-    transition: color;
-    transition: $main-transition;
+  display: block;
+  color: $black-text-color;
+  font-weight: 500;
+  font-size: 12px;
+  transition: color;
+  transition: $main-transition;
 
-    &:hover,
-    &:focus {
-        color: $yellow-color;
-    }
+  &:hover,
+  &:focus {
+    color: $yellow-color;
+  }
 
-    @media screen and(min-width:768px) {
+  @media screen and(min-width:768px) {
+    line-height: 1.81;
+    font-size: 14px;
+  }
 
-        line-height: 1.81;
-        font-size: 14px;
-
-
-    }
-
-    @media screen and(min-width:1200px) {
-        font-size: 16px;
-    }
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+  }
 }
-
 
 //-------------BUTTON-------------------//
 
-
 .contacts__btn-cover {
-
-
-    @media screen and(min-width:768px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-    }
-
-}
-
-.contacts-button {
-    
-    @media screen and(max-width:767.9px) {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    padding: 0;
-    width: 196px;
-    height: 42px;
-    gap:6px;
-
+  @media screen and(min-width:768px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0;
-    border-radius: 10px;
-    transition: border background-color;
-    transition: $main-transition;
+    gap: 16px;
+  }
+}
 
-    &:focus .contacts__btn-text {
-        color: $white-text-color;
-    }
+.contacts-button {
+  @media screen and(max-width:767.9px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    &:focus .contacts__icon {
-        stroke: $white-text-color;
-    }
+  padding: 0;
+  width: 196px;
+  height: 42px;
+  gap: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 10px;
+  transition: border background-color;
+  transition: $main-transition;
+
+  &:focus .contacts__btn-text {
+    color: $white-text-color;
+  }
+
+  &:focus .contacts__icon {
+    stroke: $white-text-color;
+  }
 }
 
 .contacts-button--color {
-    // border: 2px solid #F8D24E;
+  // border: 2px solid #F8D24E;
 
-    background-color: $yellow-color ;
-    transition: $button-transition;
-    &:hover {
-        background-color: $accent-color;
-        // border: 2px solid $accent-color;
-        transform: rotateX(360deg);
-    }
-    
-    @media screen and(max-width:767.9px) {
-        margin-bottom: 16px;
-    }
+  background-color: $yellow-color;
+  transition: $button-transition;
+  &:hover {
+    background-color: $accent-color;
+    // border: 2px solid $accent-color;
+    transform: rotateX(360deg);
+  }
 
+  @media screen and(max-width:767.9px) {
+    margin-bottom: 16px;
+  }
 }
 .contacts-button--border {
-    border: 2px solid #F8D24E;
-    background-color: $main-background-color;
-    transition: $button-transition;
+  border: 2px solid #f8d24e;
+  background-color: $main-background-color;
+  transition: $button-transition;
 
-    &:hover {
-        border: 2px solid $accent-color;
-        transform: rotateX(360deg);
-        
-    }
-
+  &:hover {
+    border: 2px solid $accent-color;
+    transform: rotateX(360deg);
+  }
 }
 
 .contacts__btn-text {
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    color: $black-text-color;
-    transition: color;
-    transition: $main-transition;
-
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black-text-color;
+  transition: color;
+  transition: $main-transition;
 }
 
 .contacts__icon {
-    stroke: $black-text-color;
-    width: 12px;
-    height: 12px;
-    transition: stroke;
-    transition: $main-transition;
+  stroke: $black-text-color;
+  width: 12px;
+  height: 12px;
+  transition: stroke;
+  transition: $main-transition;
 }
-
 
 //=============MODAL=================//
 // .modal-contacts {
@@ -328,24 +286,16 @@
 //     width: 91.5%;
 //     max-width: 440px;
 
-
-
 //     margin-left: auto;
 //     margin-right: auto;
 
-
 //     transform: scaleX(1);
 //     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 
 //     background-color: #FFFFFF;
 
 //     border-radius: 10px;
 //     border: 2px solid $yellow-color;
-
-
-
 
 //     // @media screen and (min-width: 320px) {
 //     //     width: 280px;
@@ -363,9 +313,7 @@
 //         width: 568px;
 //         height: 668px;
 
-
 //     }
-
 
 // }
 // // .modal-contacts {
@@ -376,24 +324,16 @@
 
 // //     width: 100%;
 
-
-
 // //     margin-left: auto;
 // //     margin-right: auto;
 
-
 // //     transform: scaleX(1);
 // //     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-
 
 // //     background-color: #FFFFFF;
 
 // //     border-radius: 10px;
 // //     border: 2px solid $yellow-color;
-
-
-
 
 // //     @media screen and (min-width: 320px) {
 // //         width: 280px;
@@ -411,14 +351,11 @@
 //     //     width: 568px;
 //     //     height: 668px;
 
-
 //     // }
-
 
 // // }
 
 // //and (min-height: 609px)// {
-
 
 // .close {
 //     position: absolute;
@@ -436,8 +373,6 @@
 //     padding: 0;
 //     cursor: pointer;
 
-
-
 //     &:hover .close__image {
 //         fill: #2196F3
 //     }
@@ -449,16 +384,12 @@
 //     transition-duration: 250ms;
 //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
 //     max-width: 18px;
 //     max-height: 18px;
-
-
 
 // }
 
 // //=============form===================//
-
 
 // .form-contacts{
 //     padding: 25px;
@@ -467,12 +398,9 @@
 //         padding: 32px 42px;
 //     }
 
-
 // }
 
-
 // .form-contacts__text {
-
 
 //     color: $black-text-color;
 //     margin-left: auto;
@@ -494,7 +422,6 @@
 //         text-align: center;
 //     }
 
-
 // }
 
 // .form__subtext {
@@ -514,7 +441,6 @@
 //     }
 
 // }
-
 
 // .input__cover {
 //     width: 100%;
@@ -548,8 +474,6 @@
 //         margin-bottom: 16px;
 //     }
 
-
-
 //     &:focus {
 //         outline: none !important;
 //         border: 1px solid #2196F3;
@@ -566,12 +490,6 @@
 
 //     }
 // }
-
-
-
-
-
-
 
 // .form__input-comment {
 
@@ -626,9 +544,6 @@
 //     }
 // }
 
-
-
-
 // //================backdrop=============//
 
 // .backdrop-contacts {
@@ -651,33 +566,21 @@
 
 //     }
 
-
-
 //     background-color: rgba(0, 0, 0, 0.2);
 //     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-
 // }
-
 
 // .is-hidden {
 //     opacity: 0;
 //     pointer-events: none;
 //     visibility: hidden;
 
-
-
-
-
 // }
 
 // .is-hidden.modal {
 //     transform: translate(-50%, -50%) scale(0.4);
 // }
-
-
-
 
 // //=================MAP-MODAL==============//
 
@@ -691,15 +594,11 @@
 //     max-width: 440px;
 // padding: 28px;
 
-
 //     margin-left: auto;
 //     margin-right: auto;
 
-
 //     transform: scaleX(1);
 //     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 
 //     background-color: #FFFFFF;
 
@@ -709,9 +608,6 @@
 //     .google-map__big {
 //                  display: none;
 //                 }
-
-
-
 
 //     // @media screen and (min-width: 320px) {
 //     //     width: 280px;
@@ -726,7 +622,7 @@
 //         .google-map__small {
 //                          display: none;
 //                        }
-        
+
 //                        .google-map__big {
 //                             display: block;
 //                       }
@@ -735,7 +631,6 @@
 //     @media screen and (min-width: 1200px) {
 //         width: 568px;
 //         height: 458px;
-
 
 //     }
 // }
@@ -750,24 +645,18 @@
 // //     margin-left: auto;
 // //     margin-right: auto;
 // //     transform: scaleX(1);
-    
+
 // //         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    
-    
+
 // //         background-color: #FFFFFF;
-    
+
 // //         border-radius: 10px;
 // //         border: 2px solid $yellow-color;
 // //         // padding: 32px 60px;
-        
-
 
 // //     .google-map__big {
 // //         display: none;
 // //     }
-
-    
 
 // //     @media screen and (min-width: 320px) {
 
@@ -778,7 +667,7 @@
 
 // //     @media screen and (min-width: 768px) {
 
-// //         //and (min-height: 609px) 
+// //         //and (min-height: 609px)
 // //         .google-map__small {
 // //             display: none;
 // //         }
@@ -796,9 +685,7 @@
 // //         width: 568px;
 // //         height: 458px;
 
-
 // //     }
-
 
 // // }
 
@@ -851,8 +738,6 @@
 //     padding: 0;
 //     cursor: pointer;
 
-
-
 //     &:hover .close__image {
 //         fill: #2196F3
 //     }
@@ -864,10 +749,7 @@
 //     transition-duration: 250ms;
 //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
 //     max-width: 18px;
 //     max-height: 18px;
-
-
 
 // }
