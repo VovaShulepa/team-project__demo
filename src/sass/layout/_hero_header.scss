@@ -530,7 +530,11 @@ img {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $black-text-color;
-
+  transition: 2000ms;
+  &:hover {
+    transform: rotateX(360deg);
+    cursor: pointer;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 46px;
   }
