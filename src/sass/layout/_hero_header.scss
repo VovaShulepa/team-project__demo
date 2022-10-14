@@ -394,7 +394,7 @@ img {
   font-weight: 600;
   font-size: 8px;
   line-height: 1.25;
-
+  transition: $button-transition;
   outline: none;
   color: $black-text-color;
 
@@ -405,6 +405,7 @@ img {
 
     &:hover {
       border-color: $accent-color;
+      transform: rotateX(360deg);
     }
 
     &:focus {
@@ -454,9 +455,6 @@ img {
   @media screen and (min-width: 1200px) {
     transform: translateX(-21px);
   }
-}
-
-.section-hero__ice-cone-img {
 }
 
 // added comment
@@ -562,4 +560,13 @@ img {
   &:focus .section-hero__arrow-svg {
     width: 55px;
   }
+}
+
+.section-hero__ice-cream-dish-img {
+  transition: 350ms;
+}
+
+.section-hero__ice-cream-dish-img:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
 }
