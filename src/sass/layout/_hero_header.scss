@@ -578,16 +578,21 @@ margin-bottom: 20px;
     }
 }
 
-.section-hero__arrow-link{
-    outline: none;
-    &:hover .section-hero__arrow,
-    &:focus .section-hero__arrow{
-        width: 55px;
-        height: 15px;
-    }
+.section-hero__arrow-svg{
+    width: 40px;
+    height: 30px;
+
+    transition: width $main-transition;
 }
-.section-hero__arrow{
-    margin-left: -5px;
-    width: 49px;
-    height: 15px;
+
+.section-hero__arrow-btn{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    &:hover .section-hero__arrow-svg,
+    &:focus .section-hero__arrow-svg{
+        width: 55px;
+    }
 }
