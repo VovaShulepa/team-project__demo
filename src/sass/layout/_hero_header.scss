@@ -252,12 +252,15 @@ img{
 // HERO SECTION
 
 .section-hero{
-
-    background-color: $main-background-color;
-    padding-top: 38px;
-
     position: relative;
     overflow: hidden;
+    background-color: $main-background-color;
+}
+
+.section-hero__container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 61px;
 
     @media screen and (max-width: 479px) {
         height: calc(502 - 72);
@@ -267,7 +270,7 @@ img{
         url(../images/hero_header/bg/bg-dots-mobile-right/mobile-right-1x.png);
         background-repeat: no-repeat;
         background-position: bottom left, bottom right;
-        background-size: 37%;
+        background-size: 34%, 38%;
 
 
         @media (min-device-pixel-ratio: 2),
@@ -275,16 +278,42 @@ img{
         (min-resolution: 2dppx) {
         background-image: url(../images/hero_header/bg/bg-dots-mobile-left/mobile-left-2x.png),
         url(../images/hero_header/bg/bg-dots-mobile-right/mobile-right-2x.png);
+        background-repeat: no-repeat;
+        background-position: bottom left, bottom right;
+        background-size: 34%, 38%;
       }
     }
+    
+    @media screen and (min-width: 480px) and (max-width: 767px){
+        height: 100%;
 
+        background-image:
+        url(../images/hero_header/bg/bg-dots-mobile-left/mobile-left-1x.png),
+        url(../images/hero_header/bg/bg-dots-mobile-right/mobile-right-1x.png);
+        background-repeat: no-repeat;
+        background-position: bottom left, bottom right;
+        background-size: 34%, 37%;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero_header/bg/bg-dots-mobile-left/mobile-left-2x.png),
+        url(../images/hero_header/bg/bg-dots-mobile-right/mobile-right-2x.png);
+        background-repeat: no-repeat;
+        background-position: bottom left, bottom right;
+        background-size: 30%, 30%;
+      }
+     
     @media screen and (max-width: 767px) {
-        height: calc(502 - 72);
-        
+        height: calc(502 - 72); 
+        }
     }
+
+
 
     @media screen and (min-width: 768px) {
         height: calc(415 - 72);
+        padding-top: 40px;
 
         background-image:
         url(../images/hero_header/bg/bg-dots-tablet-left/tablet-left-1x.png),
@@ -299,12 +328,14 @@ img{
         background-image: 
         url(../images/hero_header/bg/bg-dots-tablet-left/tablet-left-2x.png),
         url(../images/hero_header/bg/bg-dots-tablet-right/tablet-right-2x.png);
-        background-size: 20%, 27%;
+        background-size: 15%, 25%;
       }
     }
 
     @media screen and (min-width: 1200px) {
         height: calc(664 - 72);
+        padding-top: 45px;
+
 
         background-image:
         url(../images/hero_header/bg/bg-dots-desktop/desktop-1x.png);
@@ -319,30 +350,6 @@ img{
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: contain;
-      }
-    }
-
-}
-
-.section-hero__container{
-    display: flex;
-    justify-content: space-between;
-
-    @media screen and (min-width: 480px) and (max-width: 767px){
-        height: 100%;
-
-        background-image:
-        url(../images/hero_header/bg/bg-dots-mobile-left/mobile-left-1x.png),
-        url(../images/hero_header/bg/bg-dots-mobile-right/mobile-right-1x.png);
-        background-repeat: no-repeat;
-        background-position: bottom left, bottom right;
-        background-size: 35%;
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/hero_header/bg/bg-dots-mobile-left/mobile-left-2x.png),
-        url(../images/hero_header/bg/bg-dots-mobile-right/mobile-right-2x.png);
       }
     }
 }
@@ -360,14 +367,14 @@ img{
     @media screen and (min-width: 768px) {
         width: 181px;
         font-size: 18px;
+        margin-bottom: 20px;
     }
-
     @media screen and (min-width: 1200px) {
         width: 367px;
         font-size: 38px;
         line-height: 48px;
+        margin-bottom: 28px;
     }
-
 
 }
 
@@ -389,8 +396,13 @@ img{
     display: flex;
     gap: 20px;
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 28px;
+    }
+
     @media screen and (min-width: 1200px) {
         gap: 24px;
+        margin-bottom: 45px;
     }
 }
 .section-hero__btn{
@@ -464,11 +476,11 @@ img{
     min-width: 170px;
 
     @media screen and (min-width: 768px) {
-        transform: translateX(-11px);
+        transform: translateX(-5.5%);
 
     }
     @media screen and (min-width: 1200px) {
-        transform: translateX(-45px);
+        transform: translateX(-21px);
 
     }
 }
@@ -482,24 +494,21 @@ img{
 .section-hero__photo-and-text-wrapper{
     display: none;
     @media screen and (min-width: 768px) {
-        margin-top: 22px;
-        display: flex;
-        align-items: center;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-top: 44px;
         display: flex;
         align-items: center;
     }
 }
 
-// .section-hero__photo{
-//         height: 152px;
-//         width: 152px;
-//         background-image: url(../images/hero_header/dish-with-ice-cream/dish-tablet-1@2x.png);
-//         background-size: contain;
-// }
+.section-hero__photo{
+        height: 152px;
+        width: 152px;
+        background-size: contain;
+
+        @media screen and (min-width: 1200px) {
+            height: 224px;
+            width: 225px;
+        }
+}
 
 .section-hero__text-and-arrow-wrapper{
     display: none;
@@ -511,20 +520,25 @@ img{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
     }
-
-    @media screen and (min-width: 768px) {
-    max-width: 201px;
+    @media screen and (min-width: 1200px) {
+        width: 221px;
+        margin-left: 14px;
     }
 }
 
 .section-hero__text{
-
 font-size: 12px;
 color: $white-text-color;
 line-height: 1.4;
+margin-bottom: 20px;
 
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
+    width: 222px;
+    padding-top: 65px;
+    margin-bottom: 32px;
+    }
 }
 
 .section-hero__stats{
@@ -564,16 +578,21 @@ line-height: 1.4;
     }
 }
 
-.section-hero__arrow-link{
-    outline: none;
-    &:hover .section-hero__arrow,
-    &:focus .section-hero__arrow{
-        width: 55px;
-        height: 15px;
-    }
+.section-hero__arrow-svg{
+    width: 40px;
+    height: 30px;
+
+    transition: width $main-transition;
 }
-.section-hero__arrow{
-    margin-left: -5px;
-    width: 49px;
-    height: 15px;
+
+.section-hero__arrow-btn{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    &:hover .section-hero__arrow-svg,
+    &:focus .section-hero__arrow-svg{
+        width: 55px;
+    }
 }
