@@ -123,10 +123,6 @@ img {
   z-index: 99999 !important;
 }
 
-.main-header__burger-menu--burger-icon {
-}
-.main-header__burger-menu-icon--close-icon {
-}
 // dstdts
 .is-open {
   // transform: translateY(100%);
@@ -451,9 +447,11 @@ img {
 
   @media screen and (min-width: 768px) {
     transform: translateX(-5.5%);
+    top: 7%;
   }
   @media screen and (min-width: 1200px) {
-    transform: translateX(-21px);
+    transform: translateX(-38px);
+    top: -4%;
   }
 }
 
@@ -532,6 +530,7 @@ img {
   color: $black-text-color;
   transition: 2000ms;
   &:hover {
+    color: $yellow-color;
     transform: rotateX(360deg);
     cursor: pointer;
   }
